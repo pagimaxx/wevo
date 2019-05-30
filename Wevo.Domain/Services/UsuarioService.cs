@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Transactions;
 using Wevo.Domain.Entities.Domain;
 using Wevo.Domain.Interfaces.Repositories;
@@ -27,7 +26,7 @@ namespace Wevo.Domain.Services
                 if (listaUsuario.Any(l => l.Id == usuario.Id))
                     return true;
 
-                else if (listaUsuario.Any(l => l.Id != usuario.Id))
+                else if (listaUsuario.Any(l => l.Nome != usuario.Nome))
                     throw new Exception("Nome já cadastrado");
                 else
                 {
