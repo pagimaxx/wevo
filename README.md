@@ -1,2 +1,2 @@
 # wevo
-Projeto para a entrevista de empresa de Diego Oliveira
+Projeto para a entrevista de Diego Oliveira
